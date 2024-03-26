@@ -1,0 +1,14 @@
+//importation des variables de style
+//@import "./Variables";
+
+//mixin du style des boutons
+@mixin button() {
+
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  font-weight: bold;
+  
+}

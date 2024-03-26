@@ -1,0 +1,348 @@
+
+
+.GetProduct{
+
+    width: 95%;
+    margin: auto;
+
+   // border: solid 1px black;
+
+    /*************************  style du caroussel *******************************/
+    .carrousel{
+
+        //width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 50px;
+        margin-top: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 1px 0px #000000;
+       // border: solid red;
+       // background-color: black;
+
+       .btn{
+
+            background-color: transparent;
+            border: none;
+
+            i{
+                font-size: 60px;
+                font-weight: bold;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            
+            height: 250px;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-bottom: 0px;
+            //border: solid red;
+            .btn{
+
+                i{
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+
+
+    
+    }
+   
+     /*************************  style de la partie du propriétaire du logement *******************************/
+    &__content{
+
+       
+        margin-bottom: 50px;
+        //border: solid yellow;
+
+        &--container{
+
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            //border: solid black;
+
+            @media screen and (max-width: 768px) {
+            
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               font-size: 13px;
+                //border: solid red;
+               
+                
+            }
+
+            .containerInfo{
+
+                width: 79%;
+                height: 150px;
+              
+                //border: solid red;
+    
+                &__title{
+    
+                    color: $primary-color;
+                }
+              
+                &__btn{
+    
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                 
+                   // border: solid blue;
+    
+                    &--item{
+    
+                       //width: 15%;
+                       height: 25px;
+                       font-size: 13px;
+                    
+                       padding-left: 30px;
+                       padding-right: 30px;
+                       margin-right: 20px;
+                       border-radius: 10px 10px 10px 10px;
+                       @include button;
+                    }
+                    
+                }
+
+                @media screen and (max-width: 768px) {
+            
+                    width: 100%;
+                    height: 110px;
+                    
+                    //border: solid black;
+                   
+                    
+                }
+    
+            }
+    
+            .nameStar{
+    
+                width: 20%;
+                //border: solid green;
+
+                &__name{
+
+
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                   //border: solid red;
+
+                    &--item{
+
+                        width: 100%;
+                        text-align: end;
+                        margin-right: 3px;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: $primary-color;
+                        white-space: pre-line;
+                        //border: solid blue;
+
+                        @media screen and (max-width: 768px) {
+            
+                      
+                            font-size: 15px;
+                         
+                            
+                            //border: solid yellow;
+                           
+                            
+                        }
+                    }
+                    &--img{
+
+                       display: flex;
+                       justify-content: end;
+                      // border: solid orange;
+
+                     
+                       .hostImg{
+
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                        //border: solid black;
+                        @media screen and (max-width: 768px) {
+            
+                      
+                            width: 50px;
+                            height: 50px;
+                         
+                            
+                           // border: solid yellow;
+                           
+                            
+                        }
+                        
+                       }
+
+                       
+                       
+                    }
+                }
+
+                &__star{
+
+                    text-align: end;
+                    font-size: 20px;
+                    //border: solid black;
+
+                    
+                    @media screen and (max-width: 768px) {
+            
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        font-size: 15px;
+                        //flex-direction: row-reverse;
+                        
+                        //border: solid black;
+                       
+                        
+                    }
+
+                    //version tablette
+                    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+                        width: 45%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        //border: solid red;
+
+                        
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+            
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    
+                   // border: solid black;
+                   
+                    
+                }
+            }
+        }
+       
+    }
+
+    /*************************  style de la colapse *******************************/
+    &__ContainerArrow{
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        @media screen and (max-width: 768px) {
+            
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            
+           // border: solid black;
+           
+            
+        }
+      
+       // border: solid blue;
+
+        .containerDescriptionEquipe{
+
+            width: 47%;
+            //height: 280px;
+            border: none;
+            background-color: white;
+            //border: solid yellow;
+
+            @media screen and (max-width: 768px) {
+            
+                width: 100%;
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-top: 20px;
+                //border: solid black;
+               
+                
+            }
+            &__item{
+
+               
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 5px;
+                @include button;
+                //border: solid red;
+    
+                .btnArrow{
+    
+                    border: none;
+                    background-color: $primary-color;
+                    color: white;
+                    font-weight: bold;
+                }
+    
+                i{
+                    font-size: 18px;
+                }
+
+               
+    
+            }
+            .contentValue{
+
+              
+                height: 280px;
+                position: relative;
+                top: -12px;
+                //font-size: 18px;
+                padding-top: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: $secondery-color;
+                border-radius: 0px 0px 5px 5px;
+                line-height: 1.5; 
+                //border: solid black;
+
+                
+                .valueItemEquipements{
+
+                    display: block;
+                    text-align: start;
+                    //border: solid red;
+                }
+            }
+        }
+      
+    }
+
+    
+
+}

@@ -1,0 +1,62 @@
+// Définition de la variable
+$primary-color: #ff6060;
+
+
+
+
+.Error{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    //border: solid red;
+
+    &__404{
+
+        img{
+            width: 800px;
+            height: 350px;
+        }
+        @media screen and (max-width: 768px) {
+            
+            margin-top: 50px;
+            img{
+                width: 200px;
+                height: 99px;
+            }
+             //border: solid red;
+            
+             
+         }
+
+    }
+    &__message{
+
+        font-size: 32px;
+        color: $primary-color;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 768px) {
+            
+            font-size: 18px;
+            margin-top: 50px;
+            text-align: center;
+            // border: solid red;
+            
+             
+         }
+    }
+
+    &__link{
+
+        a{
+
+            margin-top: 30px;
+            color: black;
+        }
+       
+
+    }
+}

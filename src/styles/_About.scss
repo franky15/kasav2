@@ -1,0 +1,98 @@
+.About{
+
+    width: 95%;
+    margin: auto;
+    //border: solid black;
+
+   /*************************  style de la colapse *******************************/
+   .BtnColapse{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //margin-bottom: 50px;
+    //border: solid blue;
+
+    @media screen and (max-width: 768px) {
+            
+        margin-top: 20px;
+        font-size: 13px;
+         //border: solid red;
+        
+         
+     }
+    
+
+    .containerDescriptionEquipe{
+
+        width: 80%;
+        //height: 280px;
+        border: none;
+        background-color: white;
+        margin-bottom: 50px;
+        //border: solid yellow;
+
+        @media screen and (max-width: 768px) {
+            
+            margin-bottom: 20px;
+            font-size: 13px;
+             //border: solid red;
+            
+             
+         }
+        &__item{
+
+           
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 5px;
+            @include button;
+            //border: solid red;
+
+            .btnArrow{
+
+                border: none;
+                background-color: $primary-color;
+                color: white;
+                font-weight: bold;
+            }
+
+            i{
+                font-size: 18px;
+            }
+
+           
+
+        }
+        .contentValue{
+
+          
+            height: 280px;
+            position: relative;
+            top: -12px;
+            //font-size: 18px;
+            padding-top: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: $secondery-color;
+            border-radius: 0px 0px 5px 5px;
+            line-height: 1.5; 
+            //border: solid black;
+
+            
+            .valueItemEquipements{
+
+                display: block;
+                text-align: start;
+                //border: solid red;
+            }
+        }
+    }
+  
+}
+}
