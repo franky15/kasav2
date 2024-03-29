@@ -28,7 +28,7 @@ const Carrousel = ({productCurrent}) => {
     //fonction de gestion des images suivantes
     const manageImgNext = () => {
      
-        // Déterminer le nouvel index d'image 
+        // Détermination du nouvel index d'image 
         //ATTENTION: pour que productCurrent.pictures.length soit égale à incrementation, il faut retirer 1 à productCurrent.pictures.length et la valeur précédente de incrementation est toujours réutilisée
         const newIndex = incrementation === productCurrent.pictures.length - 1 ? 0 : incrementation + 1;
     

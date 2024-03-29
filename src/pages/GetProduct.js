@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import {data} from "../Data"
 
 //importation des composants
-import Colapse from '../components/Colapse';
+//import Colapse from '../components/Colapse';
 import Carrousel from '../components/Carrousel';
 import Accordions from '../_utils/Accordions';
 import Error from '../_utils/Error';
