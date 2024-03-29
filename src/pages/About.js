@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Banner from '../components/Banner';
-import BtnColapse from '../_utils/BtnColapse';
+import BtnColapse from '../_utils/Accordions';
 
 const About = () => {
     return (

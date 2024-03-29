@@ -7,6 +7,7 @@ import {data} from "../Data"
 //importation des composants
 import Colapse from '../components/Colapse';
 import Carrousel from '../components/Carrousel';
+import Accordions from '../_utils/Accordions';
 import Error from '../_utils/Error';
 
 const GetProduct = () => {
@@ -143,7 +144,8 @@ const GetProduct = () => {
                </div>
                
                
-                { productCurrent  &&   <Colapse id={id}/>}
+                { /*productCurrent  &&   <Colapse id={id}/>*/}
+                <Accordions/>
 
             </section>
 

@@ -1,6 +1,10 @@
 import React,{useState} from 'react';
+import { useLocation } from 'react-router-dom';
 
-const BtnColapse = () => {
+
+import Colapse from '../components/Colapse';
+
+const Accordions = () => {
 
   
     //gestion des states des flêches
@@ -12,12 +16,20 @@ const BtnColapse = () => {
         isOpenSecurite: true,
     });
 
-    
+    //réccupération de l'url
+    let location = useLocation();
+    const currentUrl = location.pathname;
+
 
     return (
 
         <div  className='BtnColapse'>
+           
+           <>
+           { currentUrl === "/about" 
+              ?
 
+              <>
             <button className='containerDescriptionEquipe'
                 onClick={ ()=> setArrow({...arrow, isOpenFiabilite: !arrow.isOpenFiabilite, }) }>
 
@@ -129,9 +141,16 @@ const BtnColapse = () => {
                 }
 
             </button>
-                   
+            </>
+            
+            :
+              <Colapse/> }
+            </>
+          
+                    
         </div>
     );
 };
 
-export default BtnColapse;
+export default Accordions;
+
