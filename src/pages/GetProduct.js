@@ -145,7 +145,7 @@ const GetProduct = () => {
                
                
                 { /*productCurrent  &&   <Colapse id={id}/>*/}
-                <Accordions/>
+                { productCurrent  &&<Accordions id={id}/>}
 
             </section>
 

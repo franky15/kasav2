@@ -12,8 +12,6 @@ const Product = () => {
 
         navigate("/product/"+id);
     }
-
-    console.log(data)
     
     return (
         <div className="Home__content">

@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 import Colapse from '../components/Colapse';
 
-const Accordions = () => {
+const Accordions = ({id}) => {
 
   
     //gestion des states des flêches
@@ -41,10 +41,10 @@ const Accordions = () => {
                     
                     {   
                         arrow.isOpenFiabilite ?
-                        <span><i class="fa-solid fa-chevron-up"></i></span>
+                        <span><i className="fa-solid fa-chevron-up"></i></span>
 
                         :
-                        <span><i class="fa-solid fa-chevron-down"></i></span>
+                        <span><i className="fa-solid fa-chevron-down"></i></span>
                     
                     }
                     
@@ -144,7 +144,7 @@ const Accordions = () => {
             </>
             
             :
-              <Colapse/> }
+             id && <Colapse id={id}/> }
             </>
           
                     
