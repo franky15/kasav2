@@ -66,7 +66,7 @@ const Colapse = ({id}) => {
                         </div>
 
                        { arrow.isLockDescription && 
-                        <p className='valueDescription contentValue'>
+                        <p className='valueDescription  description contentValue'>
                             {productCurrent && productCurrent.description && productCurrent.description}
                         </p>}
 

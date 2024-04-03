@@ -308,6 +308,7 @@ nav ul .Header__menu .borderBottomCustom {
     height: auto;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: left;
     font-size: 13px;
   }
 }
@@ -540,6 +541,21 @@ nav ul .Header__menu .borderBottomCustom {
   display: block;
   text-align: start;
   padding-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .GetProduct__ContainerArrow .containerDescriptionEquipe .contentValue .valueItemEquipements {
+    padding-left: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .GetProduct__ContainerArrow .containerDescriptionEquipe .description {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 body {
