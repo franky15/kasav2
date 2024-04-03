@@ -27,6 +27,7 @@
             color: white;
         }
 
+       
         @media screen and (max-width: 768px) {
 
             //width: 335px;
@@ -45,6 +46,17 @@
                // border: solid;
                 
             }
+            .titleBanner{
+
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                
+               // border: solid red;
+    
+               
+    
+           }
         }
     }
 

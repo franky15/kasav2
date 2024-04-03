@@ -23,7 +23,13 @@ const Banner = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center'
         }}>
-       { bannerImg = currentURL === "http://localhost:3002/"  &&  <span>Chez vous,<br></br> partout et ailleurs</span>}
+       {/* bannerImg = currentURL === "http://localhost:3002/"  ?  <span>Chez vous,partout et ailleurs</span> : <span>Chez vous,<br></br> partout et ailleurs</span>*/}
+       { bannerImg = currentURL === "http://localhost:3002/"  &&
+        <p className='titleBanner'>
+            <span className='titleBanner__up'>Chez vous,</span><span className='titleBanner__down'> partout et ailleurs</span>
+            
+        </p>
+        }
     </div>
     );
 };
