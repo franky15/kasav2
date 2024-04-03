@@ -74,9 +74,14 @@ const Carrousel = ({productCurrent}) => {
             productCurrent.pictures && productCurrent.pictures.length > 1 && (
             <>
              <button className="btn btnBack"><i className="fa-solid fa-chevron-left" onClick={manageImgPrev}></i></button>
+           
+             <p className='numberImg'>{ productCurrent.pictures && (incrementation+1)+ "/"+ productCurrent.pictures.length }</p>
+           
             <button className="btn btnNext"><i className="fa-solid fa-chevron-right" onClick={manageImgNext}></i></button>
-            
+           
             </>
+
+           
             
             )
             }

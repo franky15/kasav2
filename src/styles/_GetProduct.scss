@@ -37,6 +37,15 @@
             }
         }
 
+        .numberImg{
+
+            position: relative;
+            top: 200px;
+            color: white;
+            font-size: 20px;
+            //font-weight: bold;
+
+        }
         @media screen and (max-width: 768px) {
             
             height: 250px;
@@ -90,7 +99,7 @@
                 width: 79%;
                 height: 150px;
               
-                //border: solid red;
+               // border: solid yellow;
     
                 &__title{
     
@@ -99,23 +108,26 @@
               
                 &__btn{
     
+                    
                     display: flex;
                     align-items: center;
                     flex-wrap: wrap;
                  
-                   // border: solid blue;
+                    //border: solid blue;
     
                     &--item{
     
                        //width: 15%;
-                       height: 25px;
-                       font-size: 13px;
-                    
-                       padding-left: 30px;
-                       padding-right: 30px;
+                       height: 20px;
+                       font-size: 9px;
+                       font-weight: lighter;
+                       padding-left: 10px;
+                       padding-right: 10px;
                        margin-right: 20px;
-                       border-radius: 10px 10px 10px 10px;
+                       border-radius: 5px 5px 5px 5px;
                        @include button;
+
+                       //border: solid green;
                     }
                     
                 }
@@ -135,7 +147,9 @@
             .nameStar{
     
                 width: 20%;
-                //border: solid green;
+                padding-top: 20px;
+                margin-bottom: -10px;
+               // border: solid goldenrod;
 
                 &__name{
 
@@ -143,6 +157,7 @@
                    display: flex;
                    justify-content: space-between;
                    align-items: center;
+                   
                    //border: solid red;
 
                     &--item{
@@ -159,7 +174,7 @@
                         @media screen and (max-width: 768px) {
             
                       
-                            font-size: 15px;
+                            font-size: 10px;
                          
                             
                             //border: solid yellow;
@@ -319,13 +334,13 @@
             .contentValue{
 
               
-                height: 280px;
+                height: 130px;
                 position: relative;
                 top: -12px;
                 //font-size: 18px;
                 padding-top: 20px;
-                padding-left: 30px;
-                padding-right: 30px;
+                padding-left: 10px;
+                padding-right: 10px;
                 background-color: $secondery-color;
                 border-radius: 0px 0px 5px 5px;
                 line-height: 1.5; 
@@ -336,6 +351,7 @@
 
                     display: block;
                     text-align: start;
+                    padding-left: 0px;
                     //border: solid red;
                 }
             }

@@ -42,13 +42,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-top: 40px;
   background-color: black;
-  border: solid black;
 }
 @media screen and (max-width: 768px) {
-  .Footer .copi img {
-    width: 300px;
+  .Footer .logoFooter img {
+    width: 100px;
+  }
+  .Footer .copie {
+    position: relative;
+    top: -30px;
+  }
+  .Footer .copie img {
+    width: 80px;
   }
 }
 
@@ -145,7 +152,10 @@ nav ul .Header__menu .borderBottomCustom {
     border-radius: 10px;
   }
   .Home__banner span {
-    font-size: 18px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
   }
 }
 .Home .Home__content {
@@ -215,7 +225,8 @@ nav ul .Header__menu .borderBottomCustom {
     width: 100%;
     color: white;
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: normal;
   }
 }
 
@@ -244,6 +255,7 @@ nav ul .Header__menu .borderBottomCustom {
 }
 @media screen and (max-width: 768px) {
   .About .BtnColapse .containerDescriptionEquipe {
+    width: 100%;
     margin-bottom: 20px;
     font-size: 13px;
   }
@@ -272,7 +284,7 @@ nav ul .Header__menu .borderBottomCustom {
   font-size: 18px;
 }
 .About .BtnColapse .containerDescriptionEquipe .contentValue {
-  height: 280px;
+  height: 100px;
   position: relative;
   top: -12px;
   padding-top: 20px;
@@ -285,6 +297,14 @@ nav ul .Header__menu .borderBottomCustom {
 .About .BtnColapse .containerDescriptionEquipe .contentValue .valueItemEquipements {
   display: block;
   text-align: start;
+}
+@media screen and (max-width: 768px) {
+  .About .BtnColapse .containerDescriptionEquipe .contentValue {
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+  }
 }
 
 .GetProduct {
@@ -315,6 +335,12 @@ nav ul .Header__menu .borderBottomCustom {
   font-weight: bold;
   color: white;
   cursor: pointer;
+}
+.GetProduct .carrousel .numberImg {
+  position: relative;
+  top: 200px;
+  color: white;
+  font-size: 20px;
 }
 @media screen and (max-width: 768px) {
   .GetProduct .carrousel {
@@ -359,12 +385,13 @@ nav ul .Header__menu .borderBottomCustom {
   flex-wrap: wrap;
 }
 .GetProduct__content--container .containerInfo__btn--item {
-  height: 25px;
-  font-size: 13px;
-  padding-left: 30px;
-  padding-right: 30px;
+  height: 20px;
+  font-size: 9px;
+  font-weight: lighter;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-right: 20px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 5px 5px 5px 5px;
   background-color: #ff6060;
   color: white;
   border: none;
@@ -379,6 +406,8 @@ nav ul .Header__menu .borderBottomCustom {
 }
 .GetProduct__content--container .nameStar {
   width: 20%;
+  padding-top: 20px;
+  margin-bottom: -10px;
 }
 .GetProduct__content--container .nameStar__name {
   display: flex;
@@ -396,7 +425,7 @@ nav ul .Header__menu .borderBottomCustom {
 }
 @media screen and (max-width: 768px) {
   .GetProduct__content--container .nameStar__name--item {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 .GetProduct__content--container .nameStar__name--img {
@@ -492,12 +521,12 @@ nav ul .Header__menu .borderBottomCustom {
   font-size: 18px;
 }
 .GetProduct__ContainerArrow .containerDescriptionEquipe .contentValue {
-  height: 280px;
+  height: 130px;
   position: relative;
   top: -12px;
   padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #fbfbfb;
   border-radius: 0px 0px 5px 5px;
   line-height: 1.5;
@@ -505,6 +534,7 @@ nav ul .Header__menu .borderBottomCustom {
 .GetProduct__ContainerArrow .containerDescriptionEquipe .contentValue .valueItemEquipements {
   display: block;
   text-align: start;
+  padding-left: 0px;
 }
 
 body {

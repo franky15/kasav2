@@ -38,7 +38,11 @@
 
             span{
 
-                font-size: 18px;
+                width: 100%;
+                font-size: 15px;
+                font-weight: bold;
+                padding-left: 10px;
+               // border: solid;
                 
             }
         }
@@ -136,7 +140,8 @@
                     width: 100%;
                     color: white;
                     margin-left: 20px;
-                    font-size: 18px;
+                    font-size: 15px;
+                    font-weight: normal;
                     //border: solid blue;
                 }
                  

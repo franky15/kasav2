@@ -1,10 +1,12 @@
 import React from 'react';
 
 //importation de l'image imegeAcceuil.jpeg
-import imageAcceuil from "../images/imageAcceuil.jpeg";
+//import imageAcceuil from "../images/imageAcceuil.jpeg";
 
 //impotation de bannerMont.jpeg
-import bannerMont from "../images/bannerMont.jpeg";
+import bannerAbout from "../images/bannerMont.jpeg";
+
+import bannerAcceuil from "../images/imageAcceuil.jpeg";
 
 const Banner = () => {
 
@@ -12,7 +14,8 @@ const Banner = () => {
     const currentURL = window.location.href;
 
     let bannerImg
-    currentURL === "http://localhost:3002/" ? bannerImg= imageAcceuil : bannerImg= bannerMont;
+    ///currentURL === "http://localhost:3002/" ? bannerImg= imageAcceuil : bannerImg= bannerMont;
+    bannerImg = currentURL === "http://localhost:3002/" ?   bannerAcceuil : bannerAbout;
 
     return (
         < div className="Home__banner" style={{ 
@@ -20,7 +23,7 @@ const Banner = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center'
         }}>
-        <span>Chez vous, partout et ailleurs</span>
+       { bannerImg = currentURL === "http://localhost:3002/"  &&  <span>Chez vous,<br></br> partout et ailleurs</span>}
     </div>
     );
 };

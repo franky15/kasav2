@@ -19,7 +19,7 @@ const GetProduct = () => {
     //state de gestion des images du produit
     const [productCurrent, setProductCurrent] = useState({});
 
-    //state d"ouverture du composant Error
+    //state d"ouverture du composant Error en fionction de l'id
     const [isOpenError, setIsOpenError] = useState(true);
     
     
@@ -150,7 +150,9 @@ const GetProduct = () => {
             </section>
 
         </div>
+
         :
+
         <Error/>
         
         
