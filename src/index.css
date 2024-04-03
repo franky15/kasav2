@@ -531,7 +531,7 @@ nav ul .Header__menu .borderBottomCustom {
   top: -12px;
   padding-top: 20px;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 50px;
   background-color: #fbfbfb;
   border-radius: 0px 0px 5px 5px;
   line-height: 1.5;
@@ -539,7 +539,7 @@ nav ul .Header__menu .borderBottomCustom {
 .GetProduct__ContainerArrow .containerDescriptionEquipe .contentValue .valueItemEquipements {
   display: block;
   text-align: start;
-  padding-left: 0px;
+  padding-left: 10px;
 }
 
 body {

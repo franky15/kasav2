@@ -313,6 +313,7 @@
                 padding-left: 10px;
                 padding-right: 10px;
                 border-radius: 5px;
+                
                 @include button;
                 //border: solid red;
     
@@ -340,7 +341,7 @@
                 //font-size: 18px;
                 padding-top: 20px;
                 padding-left: 10px;
-                padding-right: 10px;
+                padding-right: 50px;
                 background-color: $secondery-color;
                 border-radius: 0px 0px 5px 5px;
                 line-height: 1.5; 
@@ -351,7 +352,7 @@
 
                     display: block;
                     text-align: start;
-                    padding-left: 0px;
+                    padding-left: 10px;
                     //border: solid red;
                 }
             }
